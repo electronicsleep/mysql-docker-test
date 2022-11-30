@@ -4,5 +4,6 @@ RUN apt-get update && apt-get upgrade -y && \
   apt-get install mysql-server mysql-client -y
 ADD mysql-run.sh .
 ADD infradb.sql .
+ADD topscore.sql .
 EXPOSE 3306
 ENTRYPOINT ["bash", "mysql-run.sh"]

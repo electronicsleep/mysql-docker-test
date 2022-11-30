@@ -13,6 +13,7 @@ mysql --user=root --execute="flush privileges;"
 mysql --user=root --execute="GRANT ALL PRIVILEGES ON infradb.* TO 'infradb'@'%';"
 mysql --user=root --execute="flush privileges;"
 mysql -u root infradb < infradb.sql
+mysql -u root infradb < topscore.sql
 
 service mysql restart
 
