@@ -2,9 +2,9 @@ USE infradb;
 
 CREATE TABLE `topscore` (
     `topscore_id` VARCHAR(36),
-    `name` VARCHAR(255) NULL DEFAULT NULL,
-    `score` VARCHAR(255) NULL DEFAULT NULL,
-    `datetime` DATETIME NULL DEFAULT NULL,
+    `name` VARCHAR(255),
+    `score` INT,
+    `datetime` DATETIME,
     PRIMARY KEY (`topscore_id`)
     );
 
