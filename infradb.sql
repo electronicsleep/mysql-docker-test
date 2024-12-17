@@ -2,10 +2,10 @@ USE infradb;
 
 CREATE TABLE `events` (
     `event_id` VARCHAR(36),
-    `service` VARCHAR(255) NULL DEFAULT NULL,
-    `event` VARCHAR(255) NULL DEFAULT NULL,
-    `event_type` VARCHAR(255) NULL DEFAULT NULL,
-    `datetime` DATETIME NULL DEFAULT NULL,
+    `service` VARCHAR(255) NOT NULL,
+    `event` VARCHAR(255) NOT NULL,
+    `event_type` VARCHAR(255) NOT NULL,
+    `datetime` DATETIME NOT NULL,
     PRIMARY KEY (`event_id`)
     );
 
