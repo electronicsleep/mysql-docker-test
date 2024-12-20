@@ -1,7 +1,7 @@
 #!/bin/bash
 IMG=$(docker images -q 'mysql-docker-test')
 if [[ ! -z "$IMG" ]]; then
-  docker rmi --force $(docker images -q 'mysql-docker-test')
+  docker rmi --force $IMG
 fi
 set -e
 docker build -t mysql-docker-test .
